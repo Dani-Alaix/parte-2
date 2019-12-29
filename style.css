@@ -30,6 +30,10 @@ body {
       color: #000000; }
     body section .two {
       color: #666666; }
+    body section img {
+      padding: 20px;
+      margin: 20px;
+      width: 150px; }
   body .home {
     background: #F44336;
     text-align: center;
@@ -46,13 +50,19 @@ body {
       font-size: 18px; }
   body .link1 {
     background: #FFFFFF; }
+    body .link1 img {
+      float: right; }
   body .link2 {
     background: #F1F1F1; }
+    body .link2 img {
+      float: left; }
   body .link3 {
+    text-align: center;
     background: #666666;
     color: #FFFFFF; }
   body footer {
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    align-content: center; }
     body footer ul {
       overflow: hidden;
       list-style: none; }
