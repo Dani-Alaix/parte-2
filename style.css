@@ -1,5 +1,22 @@
 * {
   margin: 0px;
   padding: 0px; }
+  * header nav {
+    background: #F44336;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+    color: #FFFFFF; }
+    * header nav .menu {
+      list-style: none; }
+      * header nav .menu li {
+        padding: 15px;
+        display: block;
+        float: left; }
+        * header nav .menu li a {
+          text-decoration: none; }
+      * header nav .menu li:hover {
+        background: #FFFFFF;
+        color: #000000; }
 
 /*# sourceMappingURL=style.css.map */
