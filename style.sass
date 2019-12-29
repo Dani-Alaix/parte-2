@@ -9,15 +9,16 @@ $black: #000000
 body 
     font-family: Compass LT, Montserrat, Kulim Park, Oxygen, Open Sans, Sans-serif
     letter-spacing: 2px
+    word-spacing: 5px
     header
+        width: 100%
         nav
             background: $red
-            top: 0px
-            width: 100%
-            overflow: hidden
             color: $white
             .menu
+                display: flex
                 list-style: none
+                overflow: hidden                 
                 li
                     padding: 15px
                     display: block
@@ -27,19 +28,27 @@ body
                 li:hover 
                     background: $white
                     color: $black
+        .menu_btn
+            display: none
+        .menu_btn:focus, nav
+            display: block
+
     section 
         padding: 50px
         h, p, button 
             margin: 30px
         h2, .one
             color: $black
+            font-weight: bold
         .two
             color: $gray
         img 
             padding: 20px
             margin: 20px
             width: 150px
-    .home
+        p 
+            font-size: 15px
+    .link1
         background: $red
         text-align: center
         color: $white 
@@ -53,21 +62,22 @@ body
             padding: 10px 16px
         h4, button 
             font-size: 18px
-    .link1
+    .link2
         background: $white
+        line-height: 20px
         img 
             float: right
-    .link2
+    .link3
         background: $grayl
+        line-height: 20px
         img 
             float: left
-    .link3
+    .link4
         text-align: center
         background: $gray
         color: $white
     footer 
         background: $white
-        align-content: center
         ul 
             overflow: hidden
             list-style: none
@@ -78,3 +88,19 @@ body
                 a
                     img
                         width: 40px
+
+@media only screen and (max-width:768px)
+    header
+        .menu_btn
+            display: block
+        nav
+            display: none
+            ul 
+                flex-direction: column
+                li
+                    display: block
+                    float: none
+                    border-bottom: 1px solid $white
+                img 
+                    float: right
+    

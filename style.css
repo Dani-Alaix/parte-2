@@ -4,65 +4,75 @@
 
 body {
   font-family: Compass LT, Montserrat, Kulim Park, Oxygen, Open Sans, Sans-serif;
-  letter-spacing: 2px; }
-  body header nav {
-    background: #F44336;
-    top: 0px;
-    width: 100%;
-    overflow: hidden;
-    color: #FFFFFF; }
-    body header nav .menu {
-      list-style: none; }
-      body header nav .menu li {
-        padding: 15px;
-        display: block;
-        float: left; }
-        body header nav .menu li a {
-          text-decoration: none; }
-      body header nav .menu li:hover {
-        background: #FFFFFF;
-        color: #000000; }
+  letter-spacing: 2px;
+  word-spacing: 5px; }
+  body header {
+    width: 100%; }
+    body header nav {
+      background: #F44336;
+      color: #FFFFFF; }
+      body header nav .menu {
+        display: flex;
+        list-style: none;
+        overflow: hidden; }
+        body header nav .menu li {
+          padding: 15px;
+          display: block;
+          float: left; }
+          body header nav .menu li a {
+            text-decoration: none; }
+        body header nav .menu li:hover {
+          background: #FFFFFF;
+          color: #000000; }
+    body header .menu_btn {
+      display: none; }
+    body header .menu_btn:focus, body header nav {
+      display: block; }
   body section {
     padding: 50px; }
     body section h, body section p, body section button {
       margin: 30px; }
     body section h2, body section .one {
-      color: #000000; }
+      color: #000000;
+      font-weight: bold; }
     body section .two {
       color: #666666; }
     body section img {
       padding: 20px;
       margin: 20px;
       width: 150px; }
-  body .home {
+    body section p {
+      font-size: 15px; }
+  body .link1 {
     background: #F44336;
     text-align: center;
     color: #FFFFFF; }
-    body .home h1 {
+    body .link1 h1 {
       letter-spacing: 6px;
       font-size: 60px; }
-    body .home button {
+    body .link1 button {
       background: #000000;
       color: #FFFFFF;
       border: none;
       padding: 10px 16px; }
-    body .home h4, body .home button {
+    body .link1 h4, body .link1 button {
       font-size: 18px; }
-  body .link1 {
-    background: #FFFFFF; }
-    body .link1 img {
-      float: right; }
   body .link2 {
-    background: #F1F1F1; }
+    background: #FFFFFF;
+    line-height: 20px; }
     body .link2 img {
-      float: left; }
+      float: right; }
   body .link3 {
+    background: #F1F1F1;
+    line-height: 20px; }
+    body .link3 img {
+      float: left; }
+  body .link4 {
     text-align: center;
     background: #666666;
     color: #FFFFFF; }
   body footer {
-    background: #FFFFFF;
-    align-content: center; }
+    background: #FFFFFF; }
     body footer ul {
       overflow: hidden;
       list-style: none; }
@@ -72,5 +82,19 @@ body {
         float: left; }
         body footer ul li a img {
           width: 40px; }
+
+@media only screen and (max-width: 768px) {
+  header .menu_btn {
+    display: block; }
+  header nav {
+    display: none; }
+    header nav ul {
+      flex-direction: column; }
+      header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid #FFFFFF; }
+      header nav ul img {
+        float: right; } }
 
 /*# sourceMappingURL=style.css.map */
