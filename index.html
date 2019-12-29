@@ -3,44 +3,59 @@
     <head>
         <meta charset="utf-8">
         <title>Parte 2</title>
+        <script type="text/javascript" src="code.js"></script>
         <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
         <meta name="viewport" content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
     <body>
+        
+        <!--<div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img src="assets/menu.png"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#link1">Link 1</a>
+                <a href="#link2">Link 2</a>
+                <a href="#link3">Link 3</a>
+                <a href="#link4">Link 4</a>
+            </div>
+          </div>-->
+        
         <header>
             <div class="menu_btn">
-                <a href="#" class="bt-menu"><img src="assets/menu.png">Home</a>
+                <button onclick="myFunction()" class="dropbtn"><img src="assets/menu.png"></button>
             </div>
             <nav>
-                <ul class="menu">
-                    <li><a href="#link1"></a>Link 1</li>
-                    <li><a href="#link2"></a>Link 2</li>
-                    <li><a href="#link3"></a>Link 3</li>
-                    <li><a href="#link4"></a>Link 4</li>
+                <ul id="myDropdown" class="dropdown-content">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#link1">Link 1</a></li>
+                    <li><a href="#link2">Link 2</a></li>
+                    <li><a href="#link3">Link 3</a></li>
+                    <li><a href="#link4">Link 4</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="link1"><a name="home"></a>
+
+        <section id="link1"><a name="link1"></a>
             <h1>START PAGE</h1>
             <h4>Template test</h4>
             <button>Get Started</button>
         </section>
 
-        <section class="link2"><a name="link1"></a>
+        <section id="link2"><a name="link2"></a>
             <img src="assets/icon1.png">
             <h2>Lorem ipsum</h2>
             <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempora quasi, quia obcaecati aperiam temporibus laborum nobis cumque id molestias. Eos, perferendis in totam vero necessitatibus inventore minima aspernatur voluptatum.   </p>
             <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laborum quae magnam. Nihil, porro eius, sequi nostrum aliquam rem omnis sunt dolorem fuga quae magni perspiciatis qui doloribus rerum atque?</p>
         </section>
         
-        <section class="link3"><a name="link2"></a>
+        <section id="link3"><a name="link3"></a>
             <img src="assets/icon2.png">
             <h2>Lorem ipsum</h2>
             <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempora quasi, quia obcaecati aperiam temporibus laborum nobis cumque id molestias. Eos, perferendis in totam vero necessitatibus inventore minima aspernatur voluptatum.   </p>
             <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laborum quae magnam. Nihil, porro eius, sequi nostrum aliquam rem omnis sunt dolorem fuga quae magni perspiciatis qui doloribus rerum atque?</p>
         </section>
 
-        <section class="link4"><a name="link3"></a>
+        <section id="link4"><a name="link4"></a>
             <h3>Quote of the day: live life</h3>
         </section>
         <footer>
