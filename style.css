@@ -8,32 +8,33 @@ body {
   word-spacing: 5px; }
   body header {
     width: 100%; }
-    body header nav, body header .menu_btn {
+    body header nav {
       background: #F44336; }
-      body header nav .dropdown-content, body header .menu_btn .dropdown-content {
+      body header nav .dropdown-content {
         list-style: none;
         overflow: hidden; }
-        body header nav .dropdown-content li, body header .menu_btn .dropdown-content li {
+        body header nav .dropdown-content li {
           padding: 15px;
           display: block;
           float: left; }
-          body header nav .dropdown-content li a, body header .menu_btn .dropdown-content li a {
+          body header nav .dropdown-content li a {
             text-decoration: none;
             display: block;
             color: #FFFFFF; }
-          body header nav .dropdown-content li a:hover, body header .menu_btn .dropdown-content li a:hover {
+          body header nav .dropdown-content li a:hover {
             color: #000000; }
-        body header nav .dropdown-content li:hover, body header .menu_btn .dropdown-content li:hover {
+        body header nav .dropdown-content li:hover {
           background: #FFFFFF; }
-    body header .menu_btn {
-      display: none; }
-      body header .menu_btn button {
-        float: right;
-        background: #F44336;
-        border: 0px; }
-        body header .menu_btn button img {
-          width: 40px;
-          padding: 15px; }
+    body header button {
+      display: none;
+      float: right;
+      background: #F44336;
+      border: 0px; }
+      body header button img {
+        width: 40px;
+        padding: 15px; }
+      body header button .show {
+        display: block; }
   body section {
     padding: 60px; }
     body section h, body section p, body section button {
@@ -90,42 +91,35 @@ body {
           width: 40px; }
 
 @media only screen and (max-width: 768px) {
-  body header .menu_btn {
-    cursor: pointer;
-    display: block; }
-    body header .menu_btn img {
+  body header button {
+    display: block;
+    background-color: #F44336;
+    color: #FFFFFF;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; }
+    body header button img {
       width: 20px; }
-  body header nav {
-    display: none; }
-    body header nav ul {
-      position: relative;
+  body header nav .dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1; }
+    body header nav .dropdown-content li {
       display: inline-block;
-      flex-direction: column; }
-      body header nav ul li {
-        display: none;
-        position: absolute;
-        overflow: auto;
-        float: none; }
-        body header nav ul li a {
-          color: #FFFFFF;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block; }
+      position: relative;
+      overflow: auto;
+      float: none;
+      border-bottom: 1px solid #FFFFFF; }
+      body header nav .dropdown-content li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        display: block; }
+      body header nav .dropdown-content li a:hover {
+        background-color: #FFFFFF;
+        color: #000000; }
   body header .show {
-    display: block; }
-
-  /*body
-   * header
-   *     .menu_btn
-   *         display: block
-   *     nav
-   *         display: none
-   *         ul 
-   *             flex-direction: column
-   *             li
-   *                 float: none
-   *                 border-bottom: 1px solid $white
-   *             img 
-   *                 float: right */ }
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
