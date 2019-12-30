@@ -98,7 +98,7 @@ body {
     display: inline-block; }
     body header .dropdown .dropbtn {
       display: block;
-      padding: 16px;
+      padding: 14px;
       border: none; }
     body header .dropdown .dropdown-content {
       display: none;
@@ -106,7 +106,6 @@ body {
       overflow: auto;
       z-index: 1; }
       body header .dropdown .dropdown-content a {
-        display: block;
         position: relative;
         overflow: auto;
         float: none;
@@ -116,6 +115,7 @@ body {
   body section {
     align-content: center; }
     body section img {
+      padding: 5px 30%;
       overflow: hidden;
       align-items: center; } }
 
