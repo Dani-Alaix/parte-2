@@ -14,33 +14,34 @@ body
 
     header
         width: 100%
-        nav
-            background: $red
+        background: $red
+
+        .dropdown
+            position: relative
+            display: inline-block
+
+            .dropbtn
+                display: none
+                color: $white
+                padding: 16px
+                border: none
+                float: right
+                background: $red
+                img 
+                    width: 30px
+                    padding: 15px
             .dropdown-content
                 list-style: none
-                overflow: hidden                 
-                li
+                display: inline
+                a
                     padding: 15px
                     display: block
                     float: left
-                    a
-                        text-decoration: none
-                        display: block
-                        color: $white 
-                    a:hover 
-                        color: $black  
-                li:hover 
-                    background: $white 
-        button
-            display: none
-            float: right
-            background: $red
-            border: 0px
-            img 
-                width: 40px
-                padding: 15px
-            .show 
-                display: block
+                    text-decoration: none
+                    color: $white 
+                a:hover 
+                    color: $black
+                    background: $white
                         
     section 
         padding: 60px
@@ -87,6 +88,7 @@ body
         color: $white
     footer 
         background: $white
+        text-align: center
         ul 
             overflow: hidden
             list-style: none
@@ -94,6 +96,7 @@ body
                 padding: 10px
                 display: block
                 float: left
+                align-content: center
                 a
                     img
                         width: 40px
@@ -101,34 +104,32 @@ body
 @media only screen and (max-width:768px)
     body
         header
-            button
-                display: block
-                background-color: $red
-                color: $white
-                padding: 16px
-                font-size: 16px
-                border: none
-                cursor: pointer
-                img 
-                    width: 20px
-            nav
+            .dropdown
+                float: right
+                position: relative
+                display: inline-block
+                .dropbtn
+                    display: block
+                    padding: 16px
+                    border: none
                 .dropdown-content
                     display: none
                     position: absolute
                     overflow: auto
                     z-index: 1
-                    li 
-                        display: inline-block
+                    a
+                        display: block
                         position: relative
                         overflow: auto
                         float: none
                         border-bottom: 1px solid $white
-                        a 
-                            color: $white
-                            text-decoration: none
-                            display: block
-                        a:hover 
-                            background-color: $white
-                            color: $black
-            .show 
-                display: block
+        .show 
+            display: block
+
+        section 
+            align-content: center
+            img 
+                overflow: hidden
+                align-items: center
+    
+    
